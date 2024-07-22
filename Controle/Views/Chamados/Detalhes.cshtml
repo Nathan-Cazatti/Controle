@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <h1>Detalhes</h1>
+    <!-- Views/Usuario/ListarTodos.cshtml -->
+    @model Chamados.Models.Chamado
+
+    <h2>Lista de Usuários Cadastrados</h2>
+
+    @{
+        //Id
+        //Nome
+        //Email
+        //Status
+        //Solicitacao
+        //Responsavel
+        //Inicio
+        //Termino
+    }
+
+    <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+            <p><img src="#" /> @Model.Status</p>
+        </div>
+        <h2>#@Model.Id | @Model.Nome</h2>
+        <p>@Model.Solicitacao</p>
+        <p> <small>@Model.Responsavel | @Model.Inicio - @Model.Termino</small></p>
+        <a href="#" class="icon-link">
+            <a asp-action="Encerrar" asp-route-id="@Model.Id" class="btn btn-danger">ENCERRAR</a>
+            >>>
+        </a>
+    </div>
+</body>
+</html>
